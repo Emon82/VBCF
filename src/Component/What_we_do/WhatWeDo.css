@@ -1,0 +1,35 @@
+.title{
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 49px;
+    font-weight: bold;
+}
+.aboutWe{
+    margin-top: 10px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+.btnCostomize{
+    text-align: center;
+}
+.cardImage{
+    width: 100%;
+    
+}
+.circle{
+    background: lightblue;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+    .circleCard{
+        text-align: center;
+        background-color: brown;
+        margin-top: 20px;
+    }
+    .hunfun{
+        text-align: center;
+        margin: 20px;
+        padding: 10px;
+    }
