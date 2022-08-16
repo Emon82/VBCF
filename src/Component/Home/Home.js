@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ControlledCarousel from '../Carousel';
 import backgroundImage1 from '../Image/backgroundImage1.jpg';
 import backgroundImage2 from '../Image/backgroundImage2.jpg';
 import backgroundImage3 from '../Image/backgroundImage3.jpg';
@@ -45,9 +46,10 @@ const Home = () => {
 
       <section>
         <div className="container">
-          <div className="card bg-dark text-white">
+          {/* <div className="card bg-dark text-white">
             <img className="card-img" src={image} alt="Card image" />
-          </div>
+          </div> */}
+          <ControlledCarousel im={image} />
         </div>
       </section>
       <section className='mediaQuary2'>
