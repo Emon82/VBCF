@@ -1,99 +1,156 @@
-import React from 'react'
-import'./footer.css';
+import { Formik } from 'formik';
+import React from 'react';
+import * as Yup from 'yup';
+import './footer.css';
+
+const ContactSchema = Yup.object().shape({
+  name: Yup.string()
+    .min(2, 'Too Short!')
+    .max(50, 'Too Long!')
+    .required('Required'),
+  email: Yup.string().email('Invalid email').required('Required'),
+  subject: Yup.string()
+    .min(2, 'Too Short!')
+    .max(50, 'Too Long!')
+    .required('Required'),
+  message: Yup.string()
+    .min(2, 'Too Short!')
+    .max(50, 'Too Long!')
+    .required('Required'),
+});
 export default function footer() {
   return (
     <div>
-        
-  <section>
-    <div className="contact-us">
-      <div className="container">
-        <div className="row">
-          <div className="col-4">
-            <div className="color">
-              <h2 className="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-              {/* <!--Section description--> */}
-              <p className="text-center w-responsive mx-auto mb-5">Victorian Bangladeshi Community Foundation - VBCF</p>
 
-              <div className="row">
+      <section>
+        <div className="contact-us">
+          <div className="container">
+            <div className="row">
+              <div className="col-4">
+                <div className="color">
+                  <h2 className="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+                  {/* <!--Section description--> */}
+                  <p className="text-center w-responsive mx-auto mb-5">Victorian Bangladeshi Community Foundation - VBCF</p>
 
-                {/* <!--Grid column--> */}
-                <div className="col-md- mb-md-0 mb-5">
-                  <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                  <div className="row">
 
-                    {/* <!--Grid row--> */}
-                    <div className="row">
+                    {/* <!--Grid column--> */}
+                    <div className="col-md- mb-md-0 mb-5">
+                      <Formik
+                        initialValues={{
+                          name: '',
+                          email: '',
+                          subject: '',
+                          message: '',
+                        }}
+                        validationSchema={ContactSchema}
+                        onSubmit={(values, actions) => {
+                          setTimeout(() => {
+                            alert(JSON.stringify(values, null, 2));
+                            actions.setSubmitting(false);
+                          }, 1000);
+                        }}
+                      >
 
-                      {/* <!--Grid column--> */}
-                      <div className="col-md-6">
-                        <div className="md-form mb-0">
-                          <input type="text" id="name" name="name" className="form-control" required/>
-                          <label for="name" className="">Your name</label>
-                        </div>
-                      </div>
-                      {/* <!--Grid column--> */}
+                        {props => (
+                          <form onSubmit={props.handleSubmit}>
 
-                      {/* <!--Grid column--> */}
-                      <div className="col-md-6">
-                        <div className="md-form mb-0">
-                          <input type="text" id="email" name="email" className="form-control" required/>
-                          <label for="email" className="">Your email</label>
-                        </div>
-                      </div>
-                      {/* <!--Grid column--> */}
+                            <div className="row">
+
+                              <div className="col-md-6">
+                                <div className="md-form mb-0">
+                                  <input type="text" id="name" name="name"
+                                    onChange={props.handleChange}
+                                    onBlur={props.handleBlur}
+                                    value={props.values.name}
+                                    className="form-control" required />
+                                  <label for="name" className="">Your name</label>
+                                  {props.errors.name && props.touched.name ? (
+                                    <div style={{color: "red"}}>{props.errors.name}</div>
+                                  ) : null}
+                                </div>
+                              </div>
+
+                              <div className="col-md-6">
+                                <div className="md-form mb-0">
+                                  <input
+                                    onChange={props.handleChange}
+                                    onBlur={props.handleBlur}
+                                    value={props.values.email}
+                                    type="text" id="email" name="email"
+                                    className="form-control" required />
+                                  <label for="email" className="">Your email</label>
+                                  {props.errors.email && props.touched.email ? (
+                                    <div style={{color: "red"}}>{props.errors.email}</div>
+                                  ) : null}
+                                </div>
+                              </div>
+
+                            </div>
+
+                            <div className="row">
+                              <div className="col-md-12">
+                                <div className="md-form mb-0">
+                                  <input type="text" id="subject" name="subject"
+                                    onChange={props.handleChange}
+                                    onBlur={props.handleBlur}
+                                    value={props.values.subject}
+                                    className="form-control" />
+                                  <label for="subject" className="">Subject</label>
+                                  {props.errors.subject && props.touched.subject ? (
+                                    <div style={{color: "red"}}>{props.errors.subject}</div>
+                                  ) : null}
+                                </div>
+                              </div>
+                            </div>
+
+                            <div className="row">
+
+                              <div className="col-md-12">
+
+                                <div className="md-form">
+                                  <textarea type="text" id="message" name="message"
+                                    onChange={props.handleChange}
+                                    onBlur={props.handleBlur}
+                                    value={props.values.message}
+                                    rows="2"
+                                    className="form-control md-textarea"></textarea>
+                                  <label for="message">Your message</label>
+                                  {props.errors.message && props.touched.message ? (
+                                    <div style={{color: "red"}}>{props.errors.message}</div>
+                                  ) : null}
+                                </div>
+
+                              </div>
+                            </div>
+
+                            <div className="text-center text-md-left">
+                              <button type='submit' className="btn btn-primary">Send</button>
+                            </div>
+                            <div className="status">
+                            </div>
+
+                          </form>
+                        )}
+                      </Formik>
+
 
                     </div>
-                    {/* <!--Grid row--> */}
-
-                    {/* <!--Grid row--> */}
-                    <div className="row">
-                      <div className="col-md-12">
-                        <div className="md-form mb-0">
-                          <input type="text" id="subject" name="subject" className="form-control"/>
-                          <label for="subject" className="">Subject</label>
-                        </div>
-                      </div>
-                    </div>
-                    {/* <!--Grid row--> */}
-
-                    {/* <!--Grid row--> */}
-                    <div className="row">
-
-                      {/* <!--Grid column--> */}
-                      <div className="col-md-12">
-
-                        <div className="md-form">
-                          <textarea type="text" id="message" name="message" rows="2"
-                            className="form-control md-textarea"></textarea>
-                          <label for="message">Your message</label>
-                        </div>
-
-                      </div>
-                    </div>
-                    {/* <!--Grid row--> */}
-
-                  </form>
-
-                  <div className="text-center text-md-left">
-                    <a className="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-                  </div>
-                  <div className="status">
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          /</div>
+      </section>
+      <section>
+        <div className="copiright">
+          <h6>Victorian Bangladeshi Community Foundation, PO BOX 1348 Werribee Plaza, Vic 3029, Australia</h6>
+          <span>©2017 by Victorian Bangladeshi Community Foundation - VBCF.</span>
         </div>
-      </div>
-/</div>
-  </section>
-  <section>
-    <div className="copiright">
-      <h6>Victorian Bangladeshi Community Foundation, PO BOX 1348 Werribee Plaza, Vic 3029, Australia</h6>
-      <span>©2017 by Victorian Bangladeshi Community Foundation - VBCF.</span>
+      </section>
+      {/* <!-- /footer  --> */}
     </div>
-  </section>
-  {/* <!-- /footer  --> */}
-    </div>
-    
+
   )
 }
