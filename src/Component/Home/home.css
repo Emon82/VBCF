@@ -257,3 +257,37 @@
     text-align: center;
     padding: 10px;
   }
+   /* 768 px media quary  */
+
+
+  @media only screen and (max-width: 768px) {
+    .container
+   {
+      max-width: 100%;
+      height: auto;
+   }
+  }
+  *,
+*::before,
+*::after {
+ 
+ max-width: 100%;
+  box-sizing: border-box;
+}
+.hossceNa{
+  flex: 0 0 auto;
+      width: 20%;
+      border: 2px solid;
+      margin-top: 20px;
+      /* margin-left: 35px; */
+      margin: 32px;
+      border-radius: 10px;
+      text-align: center;
+      transition: all 0.3s;
+}
+@media only screen and (max-width: 768px) {
+  .hossceNa
+ {
+    width: 100%;
+ }
+}

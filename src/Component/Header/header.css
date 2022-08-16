@@ -46,3 +46,21 @@
   left: 0;
   /* top: 50px; */
 }
+@media only screen and (max-width: 768px) {
+  .main-logo
+ {
+    width: 855px;
+ }
+}
+@media only screen and (max-width: 768px) {
+  .container
+ {
+    width: 655px;
+ }
+}
+@media only screen and (max-width: 768px) {
+  .headerMedia1
+ {
+    width: 855px;
+ }
+}

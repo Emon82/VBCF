@@ -4,7 +4,7 @@ export default function footer() {
   return (
     <div>
         
-  <section>
+  <section className='footerMedia1'>
     <div className="contact-us">
       <div className="container">
         <div className="row">
@@ -86,7 +86,7 @@ export default function footer() {
       </div>
 /</div>
   </section>
-  <section>
+  <section className='footerMedia2'>
     <div className="copiright">
       <h6>Victorian Bangladeshi Community Foundation, PO BOX 1348 Werribee Plaza, Vic 3029, Australia</h6>
       <span>©2017 by Victorian Bangladeshi Community Foundation - VBCF.</span>

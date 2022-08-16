@@ -50,7 +50,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className='mediaQuary2'>
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
@@ -71,7 +71,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section   className='mediaQuary3'>
         <div class="container">
           <div class="row">
             <div class="col-sm-6">
@@ -101,13 +101,14 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className='mediaQuary4'>
         <div class="what_we2">
           <h1>What we do</h1>
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-sm-3">
+            <div className='hossceNa'>
+            <div class="col-sm-6">
               <img src={what_we1} alt="" />
               <div class="">
                 <span>Western Region Bangla School</span>
@@ -115,8 +116,10 @@ const Home = () => {
               <div class="more-btn">
                 <button type="button" class="btn btn-secondary" style={{ width: "50% ;" }}>More</button>
               </div>
+              </div>
             </div>
-            <div class="col-sm-3">
+            <div className='hossceNa'>
+            <div class="col-sm-6">
               <img src={what_we2} alt="" />
               <div class="">
                 <span>Victorian Bangladeshi Sports Club</span>
@@ -125,7 +128,9 @@ const Home = () => {
                 <button type="button" class="btn btn-secondary" style={{ width: "50% ;" }}>More</button>
               </div>
             </div>
-            <div class="col-sm-3">
+            </div>
+            <div className='hossceNa'>
+            <div class="col-sm-6">
               <img src={what_we3} alt="" />
               <div class="">
                 <span>Victorian Bangladeshi Cultural Society</span>
@@ -133,8 +138,10 @@ const Home = () => {
               <div class="more-btn">
                 <button type="button" class="btn btn-secondary" style={{ width: "50% ;" }}>More</button>
               </div>
+              </div>
             </div>
-            <div class="col-sm-3">
+            <div className='hossceNa'>
+            <div class="col-sm-6">
               <img src={what_we4} alt="" />
               <div class="">
                 <span>Victorian Bangla Mobile Library</span>
@@ -143,15 +150,17 @@ const Home = () => {
                 <button type="button" class="btn btn-secondary" style={{ width: "50% ;" }}>More</button>
               </div>
             </div>
+            </div>
           </div>
+          
         </div>
       </section>
-      <section>
+      <section className='mediaQuary5'>
         <div class="what_we2">
           <h1>VBCF programs</h1>
         </div>
       </section>
-      <section>
+      <section className='mediaQuary6'>
         <div class="back_clor">
           <div class="container">
             <div class="row" style={{ textAalign: "-webkit-center;" }}>
@@ -223,7 +232,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className='mediaQuary7'>
         <div class="photo-gallary">
           <h2>VBCF PHOTO GALLERY</h2>
         </div>
@@ -231,40 +240,40 @@ const Home = () => {
         {/* <!-- Trigger/Open The Modal --> */}
         <div class="container">
           <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-6 col-md-3">
               <button onClick={() => { setshowModalImage(model1); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model1} alt="" /></button>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6 col-md-3">
               <button onClick={() => { setshowModalImage(model2); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model2} alt="" /></button>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6 col-md-3">
               <button onClick={() => { setshowModalImage(model3); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model3} alt="" /></button>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6 col-md-3">
               <button onClick={() => { setshowModalImage(model4); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model4} alt="" /></button>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6 col-md-3">
               <button onClick={() => { setshowModalImage(model5); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model5} alt="" /></button>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6 col-md-3">
               <button onClick={() => { setshowModalImage(model6); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model6} alt="" /></button>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6 col-md-3">
               <button onClick={() => { setshowModalImage(model7); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model7} alt="" /></button>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6 col-md-3">
               <button onClick={() => { setshowModalImage(model8); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model8} alt="" /></button>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6 col-md-3">
               <button onClick={() => { setshowModalImage(model9); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model9} alt="" /></button>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6 col-md-3">
               <button onClick={() => { setshowModalImage(model10); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model10} alt="" /></button>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6 col-md-3">
               <button onClick={() => { setshowModalImage(model11); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model11} alt="" /></button>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-6 col-md-3">
               <button onClick={() => { setshowModalImage(model12); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model12} alt="" /></button>
             </div>
           </div>
@@ -276,7 +285,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className='mediaQuary8'>
         <div class="video-channel">
           <h2>VBCF VIDEO CHANNEL </h2>
         </div>
@@ -302,7 +311,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className='mediaQuary9'>
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
