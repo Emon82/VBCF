@@ -19,48 +19,49 @@ export default function Header() {
                 </div>
             </section>
             <section className='navbar'>
-                <nav class="navbar navbar-expand-lg navbar-light ">
-                    <div class="container-fluid">
-                        
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                            <div className="collapse navbar-collapse" id="navbarText">
-                                    <ul className="navbar-nav mr-auto">
-                                        <li className="nav-item active">
-                                            <Link to={"/"} className="nav-link" href="#" style={{ color: "aliceblue" }}>Home</Link>
-                                        </li>
-                                        <li className="nav-item">
-                                            <Link to={"/Program"} className="nav-link" href="#" style={{ color: "aliceblue" }}>Program</Link>
-                                            {/* <a className="nav-link" href="#" style={{ color: "aliceblue" }}>Program </a> */}
-                                        </li>
-                                        <li className="nav-item">
-                                            <Link to={"/what_we_do"} className="nav-link" href="#" style={{ color: "aliceblue" }}>What We Do</Link>
-                                        </li>
-                                        <li className="nav-item">
-                                            <Link to={"/about"} className="nav-link" href="#" style={{ color: "aliceblue" }}>About</Link>
-                                        </li>
-                                        <li id='hasSub' className="nav-item">
-                                            <Link to={"/meettheteam"} className="nav-link" href="#" style={{ color: "aliceblue" }}>Meet The Team</Link>
-                                            <ul className='subNav'>
-                                                <li>
-                                                    <Link to={"/meettheteam"} className="nav-link" href="#" style={{ color: "aliceblue" }}>VBCF EC 2022-23</Link>
-                                                    <Link to={"/"} className="nav-link" href="#" style={{ color: "aliceblue" }}>VBCF EC 2020-21</Link>
-                                                </li>
-                                            </ul>
-
-                                        </li>
-                                        <li className="nav-item">
-                                            <a className="nav-link" href="#" style={{ color: "aliceblue" }}>Download </a>
-                                        </li>
-                                    </ul>
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light ">
+                        <div class="container-fluid">
+                    
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                <div className="collapse navbar-collapse" id="navbarText">
+                                        <ul className="navbar-nav mr-auto">
+                                            <li className="nav-item active">
+                                                <Link to={"/"} className="nav-link" href="#" style={{ color: "aliceblue" }}>Home</Link>
+                                            </li>
+                                            <li className="nav-item">
+                                                <Link to={"/Program"} className="nav-link" href="#" style={{ color: "aliceblue" }}>Program</Link>
+                                                {/* <a className="nav-link" href="#" style={{ color: "aliceblue" }}>Program </a> */}
+                                            </li>
+                                            <li className="nav-item">
+                                                <Link to={"/what_we_do"} className="nav-link" href="#" style={{ color: "aliceblue" }}>What We Do</Link>
+                                            </li>
+                                            <li className="nav-item">
+                                                <Link to={"/about"} className="nav-link" href="#" style={{ color: "aliceblue" }}>About</Link>
+                                            </li>
+                                            <li id='hasSub' className="nav-item">
+                                                <Link to={"/meettheteam"} className="nav-link" href="#" style={{ color: "aliceblue" }}>Meet The Team</Link>
+                                                <ul className='subNav'>
+                                                    <li>
+                                                        <Link to={"/meettheteam"} className="nav-link" href="#" style={{ color: "aliceblue" }}>VBCF EC 2022-23</Link>
+                                                        <Link to={"/"} className="nav-link" href="#" style={{ color: "aliceblue" }}>VBCF EC 2020-21</Link>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li className="nav-item">
+                                                <a className="nav-link" href="#" style={{ color: "aliceblue" }}>Download </a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </nav>
+                    </nav>
+                </div>
             </section>
 
 

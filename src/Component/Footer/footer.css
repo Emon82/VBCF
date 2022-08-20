@@ -1,27 +1,30 @@
-.contact-us{
-    background-color: #033b6d;;
+.contact-us {
+  background-color: #033b6d;
+  ;
+}
+
+.copiright {
+  background-color: #002749;
+  color: aliceblue;
+  text-align: center;
+  padding: 10px;
+}
+
+.color {
+  color: aliceblue;
+}
+
+@media only screen and (max-width: 768px) {
+  .footerMedia1 {
+    width: 790px;
+    margin-left: 30px;
+    /* padding:20px; */
   }
-  .copiright{
-    background-color: #002749;
-    color: aliceblue;
-    text-align: center;
-    padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .footerMedia2 {
+    width: 790px;
+    margin-left: 30px;
   }
-  .color{
-    color: aliceblue;
-  }
-  @media only screen and (max-width: 768px) {
-    .footerMedia1
-   {
-      width: 790px;
-      margin-left: 30px;
-      /* padding:20px; */
-   }
-  }
-  @media only screen and (max-width: 768px) {
-    .footerMedia2
-   {
-      width: 790px;
-      margin-left: 30px;
-   }
-  }
+}

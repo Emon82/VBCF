@@ -28,7 +28,7 @@ export default function footer() {
             <div className="row">
               <div className="col-4">
                 <div className="color">
-                  <h2 className="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+                  <h2 className="h1-responsive font-weight-bold my-4">Contact us</h2>
                   {/* <!--Section description--> */}
                   <p className="text-center w-responsive mx-auto mb-5">Victorian Bangladeshi Community Foundation - VBCF</p>
 
