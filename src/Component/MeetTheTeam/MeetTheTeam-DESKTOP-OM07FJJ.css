@@ -1,0 +1,4 @@
+.boxshadow{
+    box-shadow: rgb(0 0 0 / 15%) 0px 15px 25px, rgb(0 0 0 / 5%) 0px 5px 10px;
+    /* height: "200px"; */
+}

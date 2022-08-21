@@ -1,0 +1,71 @@
+.main-logo{
+    background-color: #002749;
+    color: aliceblue;
+  }
+  .navbar{
+    background-color: #033b6d;
+  }
+  h1{
+    font-size: 2.5em;
+  }
+  .bold-text {
+      font-weight: bold;
+  }
+  .v_logo{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .nav-link{
+      color: black;
+      
+  }
+  a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#hasSub {
+  position: relative;
+}
+
+.subNav{
+  display: none;
+  position: absolute;
+  left: 0;
+  /* top: 0; */
+  background-color: #033b6d;
+  z-index: 999;
+  /* top: 50px; */
+
+}
+
+#hasSub:hover .subNav {
+  display: block; 
+  width: 170px;
+  left: 0;
+  /* top: 50px; */
+}
+@media only screen and (max-width: 768px) {
+  .main-logo
+ {
+    width: 855px;
+ }
+}
+@media only screen and (max-width: 768px) {
+  .container
+ {
+  
+    max-width: 100%;
+    height: auto;
+ 
+ }
+}
+@media only screen and (max-width: 768px) {
+  .headerMedia1
+ {
+  max-width: 100%;
+  height: auto;
+ }
+ 
+}
