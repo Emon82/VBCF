@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ControlledCarousel from '../Carousel';
 import backgroundImage1 from '../Image/backgroundImage1.jpg';
 import backgroundImage2 from '../Image/backgroundImage2.jpg';
 import backgroundImage3 from '../Image/backgroundImage3.jpg';
@@ -45,9 +46,10 @@ const Home = () => {
 
       <section>
         <div className="container">
-          <div className="card bg-dark text-white">
+          {/* <div className="card bg-dark text-white">
             <img className="card-img" src={image} alt="Card image" />
-          </div>
+          </div> */}
+          <ControlledCarousel im={image} />
         </div>
       </section>
       <section className='mediaQuary2'>
@@ -291,14 +293,14 @@ const Home = () => {
         </div>
         <div class="container">
           <div class="row">
-            {videos && videos.length && videos.map(video => (
+            {videos.length && videos.map(video => (
               <div class="col-sm-4">
                 <button onClick={() => { setshowModalVideo(video.url); setshowModalV(true) }} class="myVideoBtn">
                   <div class="layer"></div>
-                  <iframe class="ifram" src={video.url} title="WRBS KID EID ANANDAMELA 2020"
+                  <iframe class="ifram" src={video.url} title={video.title}
                     allowfullscreen></iframe>
                 </button>
-                <span class="ANANDAMELA">WRBS KID EID ANANDAMELA 2020</span>
+                <span class="ANANDAMELA">{video.title}</span>
               </div>
             ))}
 
@@ -319,18 +321,21 @@ const Home = () => {
                 <div class="row">
                   <div class="col-md-4">
                     <div class="hard">
+                      <i className='fa fa-map-marker'></i>
                       <h5 class="card-title">Address</h5>
                       <p>5th Floor, Quantum Emerald Point, 1/B Gareeb-e-Nawaz Ave, Dhaka 1230 | (EIIN-27893)</p>
                     </div>
                   </div>
                   <div class="col-md-4">
                     <div class="hard">
+                    <i className='fa fa-phone'></i>
                       <h5 class="card-title">Phone Number</h5>
                       <p> 09678221191</p>
                     </div>
                   </div>
                   <div class="col-md-4">
                     <div class="hard">
+                    <i className='fa fa-envelope'></i>
                       <h5 class="card-title">Email Address</h5>
                       <p>cs.netizen@gmail.com</p>
                     </div>
@@ -346,4 +351,3 @@ const Home = () => {
 }
 
 export default Home;
-

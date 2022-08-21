@@ -1,5 +1,3 @@
-import { useEffect, useState } from 'react';
-import axios from 'axios';
 import { Route, Routes } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import './App.css';
@@ -12,7 +10,6 @@ import PostDetails from './Component/PostDetails/PostDetails';
 import Program from './Component/Program/Program';
 import WhatWeDo from './Component/What_we_do/WhatWeDo';
 function App() {
-  
   return (
     <div >
       <BrowserRouter>
@@ -25,7 +22,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path='/meettheteam' element={<MeetTheTeam />}/>
         </Routes>
-        <Footer  />
+        <Footer />
       </BrowserRouter>
     </div>
   );

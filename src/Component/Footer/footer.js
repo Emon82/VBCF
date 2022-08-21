@@ -1,9 +1,7 @@
-import axios from 'axios';
 import { Formik } from 'formik';
-import React, { useLayoutEffect, useState } from 'react';
+import React from 'react';
 import * as Yup from 'yup';
 import './footer.css';
-
 
 const ContactSchema = Yup.object().shape({
   name: Yup.string()
@@ -20,20 +18,7 @@ const ContactSchema = Yup.object().shape({
     .max(50, 'Too Long!')
     .required('Required'),
 });
-
-export default function Footer() 
-{
-
-  const [footerData, setFooterData] = useState({});
-
-
-  useLayoutEffect(() => {
-    axios.get("http://localhost:8000/api/footer").then(response => response.data).then(data=> {
-      setFooterData(data[0]);
-      console.log(data[0]);
-    })
-  }, [])
-
+export default function footer() {
   return (
     <div>
 
@@ -43,7 +28,7 @@ export default function Footer()
             <div className="row">
               <div className="col-4">
                 <div className="color">
-                  <h2 className="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+                  <h2 className="h1-responsive font-weight-bold my-4">Contact us</h2>
                   {/* <!--Section description--> */}
                   <p className="text-center w-responsive mx-auto mb-5">Victorian Bangladeshi Community Foundation - VBCF</p>
 
@@ -60,27 +45,10 @@ export default function Footer()
                         }}
                         validationSchema={ContactSchema}
                         onSubmit={(values, actions) => {
-                          const feedbackObject= {
-                            name: values.name,
-                            email: values.email,
-                            subject: values.subject,
-                            suggestion: values.message
-                          };
-                          axios.post('http://localhost:8000/api/send-mail', feedbackObject)
-                          .then(function (response) {
-                            console.log(response);
-                            alert("Successfully submitted feedback");
-
+                          setTimeout(() => {
+                            alert(JSON.stringify(values, null, 2));
                             actions.setSubmitting(false);
-                            actions.resetForm();
-                          })
-                          .catch(function (error) {
-                            console.log(error);
-                          });
-                          // setTimeout(() => {
-                          //   alert(JSON.stringify(values, null, 2));
-                          //   actions.setSubmitting(false);
-                          // }, 1000);
+                          }, 1000);
                         }}
                       >
 
@@ -177,11 +145,12 @@ export default function Footer()
       </section>
       <section>
         <div className="copiright">
-          <h6>{footerData.title},{footerData.address}</h6>
-          <span>{footerData.copyiright}</span>
+          <h6>Victorian Bangladeshi Community Foundation, PO BOX 1348 Werribee Plaza, Vic 3029, Australia</h6>
+          <span>©2017 by Victorian Bangladeshi Community Foundation - VBCF.</span>
         </div>
       </section>
       {/* <!-- /footer  --> */}
     </div>
+
   )
 }
