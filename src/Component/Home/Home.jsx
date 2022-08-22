@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ControlledCarousel from '../Carousel';
+import CarouselFade from '../Carousel';
 import backgroundImage1 from '../Image/backgroundImage1.jpg';
 import backgroundImage2 from '../Image/backgroundImage2.jpg';
 import backgroundImage3 from '../Image/backgroundImage3.jpg';
@@ -7,7 +7,6 @@ import backgroundImage4 from '../Image/backgroundImage4.jpg';
 import backgroundImage5 from '../Image/backgroundImage5.jpg';
 import backgroundImage6 from '../Image/backgroundImage6.jpg';
 import cardimage from '../Image/cardImage.jpg';
-import image from '../Image/cover.jpg';
 import image3 from '../Image/imag3.jpg';
 import image2 from '../Image/image2.jpg';
 import model1 from '../Image/model1.jpg';
@@ -43,69 +42,70 @@ const Home = () => {
 
     <div>
 
-      <section className='cover'>
-        <div className="container">
-          <ControlledCarousel im={image} />
-        </div>
-      </section>
-      <section className='mediaQuary2'>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="about">
-                <h1 class="About-text">About us</h1>
-                <div class="Victorian">
-                  <h5 class="text-center">Victorian Bangladeshi Community Foundation (VBCF) is<br /> established in 2006 with
-                    the
-                    motto of " Bringing <br /> Community Together". </h5>
-                </div>
-                <div class="container">
-                  <div class="btnn">
-                    <button type="button " class="btn btn-secondary ">More</button>
-                  </div>
+
+      <div className="container pt-3">
+        <CarouselFade im1={model9} im2={model12} im3={model11} im4={model10} />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="about">
+              <h1 class="About-text text-uppercase">About us</h1>
+              <div class="Victorian">
+                <h5 class="text-center">Victorian Bangladeshi Community Foundation (VBCF) is established in 2006 with the motto of "Bringing Community Together". </h5>
+              </div>
+              <div class="container">
+                <div class="btnn">
+                  <div class="moreBtn">More</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <section   className='mediaQuary3'>
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h1 class="card-title">VBCF social media</h1>
-                  <img src={cardimage} class="card_image" alt="" />
-                  <a href="http://">Day -2 Bangladesh High Commission Consulate Camp In Melbourne. We introduced Justice of
-                    the Peace J...</a>
-                  <img src={image2} class="card_image" alt="" />
-                  <a href="http://">Bangladesh high commission consulate camp going on. We VBCF team is working for the
-                    community. Tomor...</a>
-                  <img src={image3} class="card_image" alt="" />
-                  <a href="http://">Community Hub Consultation Session ( Friday 24th Jun 2022). Video : Rimon Chakraborty.
-                    Technical Su...</a>
-                </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div className="card">
+              <div className="card-body">
+              <h1 class="card-title">VBCF social media</h1>
+              <img src={cardimage} class="card_image" alt="" />
+                <a href="http://">Day -2 Bangladesh High Commission Consulate Camp In Melbourne. We introduced Justice of
+                  the Peace J...</a>
               </div>
             </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                  <h1 class="card-title">VBCF event calendar</h1>
-                  <h3 class="Upcoming_event">Upcoming events</h3>
-                </div>
+            <div className="card">
+              <div className="card-body">
+              <img src={image2} class="card_image" alt="" />
+                <a href="http://">Bangladesh high commission consulate camp going on. We VBCF team is working for the
+                  community. Tomor...</a>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card-body">
+              <img src={image3} class="card_image" alt="" />
+                <a href="http://">Community Hub Consultation Session ( Friday 24th Jun 2022). Video : Rimon Chakraborty.
+                  Technical Su...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card large-card">
+              <div class="card-body">
+                <h1 class="card-title">VBCF event calendar</h1>
+                <h3 class="Upcoming_event">Upcoming events</h3>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
 
       <section className='mediaQuary4'>
         <div class="what_we2">
           <h1>What we do</h1>
         </div>
-        <div class="container">
+        <div class="container py-3">
           <div class="row">
             <div class="col-sm-3 hossceNa">
               <img src={what_we1} alt="" />
@@ -151,7 +151,7 @@ const Home = () => {
               <div class="more-btn">
                 <button type="button" class="btn btn-secondary" style={{ width: "50% ;" }}>More</button>
               </div>
-              
+
             </div>
             <div class="col-sm-3 hossceNa">
               <img src={what_we2} alt="" />
@@ -169,7 +169,7 @@ const Home = () => {
               </div>
               <div class="more-btn">
                 <button type="button" class="btn btn-secondary" style={{ width: "50% ;" }}>More</button>
-              
+
               </div>
             </div>
             <div class="col-sm-3 hossceNa">
@@ -180,14 +180,14 @@ const Home = () => {
               <div class="more-btn">
                 <button type="button" class="btn btn-secondary" style={{ width: "50% ;" }}>More</button>
               </div>
-             
+
             </div>
           </div>
         </div>
       </section>
 
 
-      
+
       <section className='mediaQuary5'>
         <div class="what_we2">
           <h1>VBCF programs</h1>
@@ -198,65 +198,65 @@ const Home = () => {
           <div class="container">
             <div class="row" style={{ textAalign: "-webkit-center;" }}>
               <div class="col-6 main-div">
-                
-                  <img src={backgroundImage1} alt="" />
-                  <div class="backdrop">
-                    <h4 style={{ textAlign: "center" }}>
-                      <a style={{ color: "white" }} href=""> Facebook Session on Centrelink and Govt. Financial Support package
-                        during coronavirus situation</a>
-                    </h4>
+
+                <img src={backgroundImage1} alt="" />
+                <div class="backdrop">
+                  <h4 style={{ textAlign: "center" }}>
+                    <a style={{ color: "white" }} href=""> Facebook Session on Centrelink and Govt. Financial Support package
+                      during coronavirus situation</a>
+                  </h4>
                 </div>
               </div>
               <div class="col-6 main-div">
-                
-                  <img src={backgroundImage2} alt="" />
-                  <div class="backdrop">
-                    <h4 style={{ textAlign: "center" }}>
-                      <a style={{ color: "white" }} href=""> Live Facebook Session on Finance and banking support during
-                        coronavirus situation</a>
-                    </h4>
-                  
+
+                <img src={backgroundImage2} alt="" />
+                <div class="backdrop">
+                  <h4 style={{ textAlign: "center" }}>
+                    <a style={{ color: "white" }} href=""> Live Facebook Session on Finance and banking support during
+                      coronavirus situation</a>
+                  </h4>
+
                 </div>
               </div>
               <div class="col-6 main-div">
-               
-                  <img src={backgroundImage3} alt="" />
-                  <div class="backdrop">
-                    <h4 style={{ textAlign: "center" }}>
-                      <a style={{ color: "white" }} href=""> Live Facebook Session on Current coronavirus situation</a>
-                    </h4>
-                 
+
+                <img src={backgroundImage3} alt="" />
+                <div class="backdrop">
+                  <h4 style={{ textAlign: "center" }}>
+                    <a style={{ color: "white" }} href=""> Live Facebook Session on Current coronavirus situation</a>
+                  </h4>
+
                 </div>
               </div>
               <div class="col-6 main-div">
-                
-                  <img src={backgroundImage4} alt="" />
-                  <div class="backdrop">
-                    <h4 style={{ textAlign: "center" }}>
-                      <a style={{ color: "white" }} href=""> WRBS KID EID Anandamela</a>
-                    </h4>
-                  </div>
-                
+
+                <img src={backgroundImage4} alt="" />
+                <div class="backdrop">
+                  <h4 style={{ textAlign: "center" }}>
+                    <a style={{ color: "white" }} href=""> WRBS KID EID Anandamela</a>
+                  </h4>
+                </div>
+
               </div>
               <div class="col-6 main-div">
-                  <img src={backgroundImage5} alt="" />
-                  <div class="backdrop">
-                    <h4 style={{ textAlign: "center" }}>
-                      <a style={{ color: "white" }} href="">
-                        IMLD 2020</a>
-                    </h4>
-                 
+                <img src={backgroundImage5} alt="" />
+                <div class="backdrop">
+                  <h4 style={{ textAlign: "center" }}>
+                    <a style={{ color: "white" }} href="">
+                      IMLD 2020</a>
+                  </h4>
+
                 </div>
               </div>
               <div class="col-6 main-div">
-                
-                  <img src={backgroundImage6} alt="" />
-                  <div class="backdrop">
-                    <h4 style={{ textAlign: "center" }}>
-                      <a style={{ color: "white" }} href="">
-                        Australia Day Parade 2020</a>
-                    </h4>
-                  
+
+                <img src={backgroundImage6} alt="" />
+                <div class="backdrop">
+                  <h4 style={{ textAlign: "center" }}>
+                    <a style={{ color: "white" }} href="">
+                      Australia Day Parade 2020</a>
+                  </h4>
+
                 </div>
               </div>
             </div>
@@ -357,14 +357,14 @@ const Home = () => {
                   </div>
                   <div class="col-md-4">
                     <div class="hard">
-                    <i className='fa fa-phone'></i>
+                      <i className='fa fa-phone'></i>
                       <h5 class="card-title">Phone Number</h5>
                       <p> 09678221191</p>
                     </div>
                   </div>
                   <div class="col-md-4">
                     <div class="hard">
-                    <i className='fa fa-envelope'></i>
+                      <i className='fa fa-envelope'></i>
                       <h5 class="card-title">Email Address</h5>
                       <p>cs.netizen@gmail.com</p>
                     </div>

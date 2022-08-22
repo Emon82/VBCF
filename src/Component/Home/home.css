@@ -1,288 +1,12 @@
-
-
-
-
-
-
-.main-logo{
-    background-color: #002749;
-    color: aliceblue;
-  }
-  .navbar{
-    background-color: #033b6d;
-  }
-  h1{
-    font-size: 2.5em;
-  }
-  .bold-text {
-      font-weight: bold;
-  }
-  .v_logo{
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  .nav-link{
-      color: black;
-      
-  }
-  .card-img{
-      height: 500px;
-      
-  }
-  
-  .btnn {
-      display: flex;
-      justify-content: center;
-     
-  }
-  .card_image{
-      width: 100%;
-      margin: 5px;
-  }
-  a{
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-  }
-  
-  .Upcoming_event{
-      background-color: red;
-      height: 50px;
-     padding-left: 20px;
-     padding-top: 5px;
-  }
-  /* .row{
-      margin: 20px;
-  } */
-  .main-div {
-      height: 100%;
-      width: auto;
-      position: relative;
-      margin: 15px;
-      border-radius: 10px;
-     
-    }
-    .About-text{
-      padding: 10px;
-    }
-    .Victorian{
-      padding: 10px;
-    }
-    .backdrop {
-      top: 0;
-      left:0;
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      background-color: #00000045;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: none;
-      box-shadow: 5px 5px 10px lightgray;
-      border-radius: 10px;
-      
-    }
-  
-    .backdrop:hover a{
-      color: green !important;
-  
-    }
-    
-    
-  
-  
-    .modal {
-      display: none; /* Hidden by default */
-      position: fixed; /* Stay in place */
-      z-index: 1; /* Sit on top */
-      padding-top: 100px; /* Location of the box */
-      left: 0;
-      top: 0;
-      width: 100%; /* Full width */
-      height: 100%; /* Full height */
-      overflow: auto; /* Enable scroll if needed */
-      background-color: rgb(0,0,0); /* Fallback color */
-      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
-
-    .show_modal {
-        display: block !important;
-    }
-    
-    /* Modal Content */
-    .modal-content {
-      background-color: #fefefe;
-      margin: auto;
-      padding: 20px;
-      border: 1px solid #888;
-      width: 80%;
-    }
-    
-    /* The Close Button */
-    .close {
-      color: #aaaaaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
-    }
-    
-    .close:hover,
-    .close:focus {
-      color: #000;
-      text-decoration: none;
-      cursor: pointer;
-    }
-    .card{
-      margin: 10px;
-      padding: 10px;
-    }
-    
-    .myBtn{
-      width: auto;
-      box-shadow: 5px 5px 10px lightgray;
-      margin: 10px;
-      padding: 28px;
-    }
-    .Image-container{
-      width: 100%;
-      border: none;
-      box-shadow: 5px 5px 10px lightgray;
-    }
-    .ifram {
-      width: 100%;
-    }
-  .btn-close {
-  position:absolute;
-  right:-30px;
-  top:0;
-  }
-  
-  .myVideoBtn {
-   
-    position: relative;
-    width: 100%;
-    height: 300px;
-  }
-  
-  
-  .ANANDAMELA{
-    display: flex;
-  }
-  .submit{
-    background-color: gainsboro;
-    padding: 20px;
-  }
-  
-  .about{
-      background-color: #002749;
-      text-align: center;
-      color: white;
-      font-weight: bold;
-      /* address*/
-      height: auto;
-      box-shadow: 5px 0px 18px #888888;
-      border-radius: 10px;
-      align-items: center;
-      margin-top: 10px;
-    
-    }
-
-  
-  
-  .what_we2{
-    background-color: #002749;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    padding: 5px;
-    width: auto;
-  }
-  .mediaQuary4{
-    width: auto;
-  }
-  
-  
-  .col-sm-3:hover{
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    transform: scale3d(2);
-  }
-
-  
-  
-  .back_clor{
-    background-color: #f2f2f2;;
-  }
-  .photo-gallary{
-    background-color: #002749;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    padding: 25px;
-  }
-  .video-channel{
-    background-color: #002749;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    padding: 25px;
-  }
-  .contact-us{
-    background-color: #033b6d;;
-  }
-  .color{
-    color: aliceblue;
-  }
-  .address{
-    
-    /* padding: 10px; */
-    box-shadow: 5px 0px 18px #888888;
-    margin-bottom: -30px;
-      border-radius: 10px;
-      align-items: center;
-      display: flex;
-      justify-content: center;
-  }
-  .hard{
-    text-align: center;
-  }
-  .copiright{
-    background-color: #002749;
-    color: aliceblue;
-    text-align: center;
-    padding: 10px;
-  }
- 
-  .hossceNa{
-    flex: 0 0 auto;
-        width: 20%;
-        margin: 10px 12px;
-        padding: 10px;
-        border: none;
-        box-shadow: 5px 5px 10px lightgray;
-        border-radius: 10px;
-        text-align: center;
-        transition: all 0.3s;
-  }
-
-
-
-   /* 768 px media quary  */
-
-
-  
-   .row {
-    
-   }
 .main-logo {
   background-color: #002749;
   color: aliceblue;
 }
 
-.navbar {
-  background-color: #033b6d;
+.navContainer {
+  background-color: #007ccb;
 }
+
 
 h1 {
   font-size: 2.5em;
@@ -301,12 +25,317 @@ h1 {
   color: black;
 
 }
+
+.card-img {
+  height: 500px;
+
+}
+
 .btnn {
   display: flex;
   justify-content: center;
-margin: 10px;
-padding: 10px;
+
 }
+
+.card_image {
+  width: 100%;
+  margin: 5px;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.Upcoming_event {
+  background-color: red;
+  height: 50px;
+  padding-left: 20px;
+  padding-top: 5px;
+}
+
+/* .row{
+      margin: 20px;
+  } */
+.main-div {
+  height: 100%;
+  width: auto;
+  position: relative;
+  margin: 15px;
+  border-radius: 10px;
+
+}
+
+.About-text {
+  padding: 10px;
+}
+
+.Victorian {}
+
+.Victorian h5 {
+  font-weight: 400;
+}
+
+.backdrop {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #00000045;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: 5px 5px 10px lightgray;
+  border-radius: 10px;
+
+}
+
+.backdrop:hover a {
+  color: green !important;
+
+}
+
+
+
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.show_modal {
+  display: block !important;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card {
+  margin: 10px;
+  padding: 10px;
+}
+
+.myBtn {
+  width: auto;
+  box-shadow: 5px 5px 10px lightgray;
+  margin: 10px;
+  padding: 28px;
+}
+
+.Image-container {
+  width: 100%;
+  border: none;
+  box-shadow: 5px 5px 10px lightgray;
+}
+
+.ifram {
+  width: 100%;
+}
+
+.btn-close {
+  position: absolute;
+  right: -30px;
+  top: 0;
+}
+
+.myVideoBtn {
+
+  position: relative;
+  width: 100%;
+  height: 300px;
+}
+
+
+.ANANDAMELA {
+  display: flex;
+}
+
+.submit {
+  background-color: gainsboro;
+  padding: 20px;
+}
+
+.about {
+  background-color: #002749;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  /* box-shadow: 5px 0px 18px #888888; */
+  border-radius: 10px;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.what_we2 {
+  background-color: #002749;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 5px;
+  width: auto;
+}
+
+.mediaQuary4 {
+  width: auto;
+}
+
+
+.col-sm-3:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: scale3d(2);
+}
+
+
+
+.back_clor {
+  background-color: #f2f2f2;
+  ;
+}
+
+.photo-gallary {
+  background-color: #002749;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 25px;
+}
+
+.video-channel {
+  background-color: #002749;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  padding: 25px;
+}
+
+.contact-us {
+  background-color: #033b6d;
+  ;
+}
+
+.color {
+  color: aliceblue;
+}
+
+.address {
+
+  /* padding: 10px; */
+  box-shadow: 5px 0px 18px #888888;
+  margin-bottom: -30px;
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.hard {
+  text-align: center;
+}
+
+.copiright {
+  background-color: #002749;
+  color: aliceblue;
+  text-align: center;
+  padding: 10px;
+}
+
+.hossceNa {
+  flex: 0 0 auto;
+  width: 20%;
+  margin: 10px 12px;
+  padding: 10px;
+  border: none;
+  box-shadow: 5px 5px 10px lightgray;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s;
+  background-color: #fff;
+}
+
+
+
+/* 768 px media quary  */
+
+
+
+.row {}
+
+.main-logo {
+  background-color: #002749;
+  color: aliceblue;
+}
+
+
+h1 {
+  font-size: 2.5em;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.v_logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav-link {
+  color: black;
+
+}
+
+.btnn {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 10px;
+}
+
 a {
   text-decoration: none;
   display: flex;
@@ -314,10 +343,13 @@ a {
   color: #000;
 }
 
+.large-card {
+  height: 98%;
+}
+
 .card-body {
   height: auto;
   border: none;
-  box-shadow: 5px 5px 10px lightgray;
   border-radius: 10px;
 }
 
@@ -327,15 +359,14 @@ a {
   padding-left: 20px;
   padding-top: 5px;
 }
+
 .main-div img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.About-text {
-  padding: 5px;
-}
+
 .layer {
   position: absolute;
   left: 0;
@@ -344,17 +375,19 @@ a {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.11);
 }
-.col-sm-3{
+
+.col-sm-3 {
   flex: 0 0 auto;
-    width: auto;
-    border: none;
-    box-shadow: 5px 5px 10px lightgray;
-    border-radius: 10px;
-    padding: 19px;
-    text-align: center;
-    transition: all 0.3s;
-    
+  width: auto;
+  border: none;
+  box-shadow: 5px 5px 10px lightgray;
+  border-radius: 10px;
+  padding: 19px;
+  text-align: center;
+  transition: all 0.3s;
+
 }
+
 .more-btn {
   color: #fff;
   border-radius: 8px;
@@ -362,6 +395,7 @@ a {
   cursor: pointer;
   align-items: center;
 }
+
 .photo-gallary {
   background-color: #002749;
   text-align: center;
@@ -415,33 +449,25 @@ a {
   padding: 10px;
 }
 
-
-/* 768 px media quary  */
-
-/* 
-@media only screen and (max-width: 768px) {
-  .container {
-    max-width: 100%;
-    height: auto;
-  }
- .hossceNa {
-  flex: 0 0 auto;
-  width: auto ;
-  border: none;
-  box-shadow: 5px 5px 10px lightgray;
+.moreBtn {
+  padding: 10px 30px;
   border-radius: 10px;
-  margin-top: 20px;
-  text-align: center;
+  background-color: green;
+  cursor: pointer;
   transition: all 0.3s;
 }
-.cover{
-  margin: 20px;
-  width: 90%;
+
+
+.moreBtn:hover {
+  background-color: rgba(0, 128, 0, 0.589);
 }
-.col-4{
-text-align: -webkit-center;
+
+.carousel-image {
+  height: 500px;
 }
-.card_image{
-width: 300px;
+
+@media screen and (max-width: 768px) {
+  .carousel-image {
+    height: 300px;
+  }
 }
-} */

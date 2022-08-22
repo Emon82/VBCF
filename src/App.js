@@ -14,14 +14,16 @@ function App() {
     <div >
       <BrowserRouter>
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Program" element={<Program />} />
-          <Route path="/postDetails/:id" element={<PostDetails />} />
-          <Route path="/what_we_do" element={<WhatWeDo />} />
-          <Route path="/about" element={<About />} />
-          <Route path='/meettheteam' element={<MeetTheTeam />}/>
-        </Routes>
+        <div class="mainContainer">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Program" element={<Program />} />
+            <Route path="/postDetails/:id" element={<PostDetails />} />
+            <Route path="/what_we_do" element={<WhatWeDo />} />
+            <Route path="/about" element={<About />} />
+            <Route path='/meettheteam' element={<MeetTheTeam />}/>
+          </Routes>
+        </div>
         <Footer />
       </BrowserRouter>
     </div>
