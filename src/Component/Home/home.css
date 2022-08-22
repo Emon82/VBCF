@@ -59,12 +59,16 @@ a {
       margin: 20px;
   } */
 .main-div {
-  height: 100%;
-  width: auto;
+  width: 100%;
+  height: auto;
   position: relative;
   margin: 15px;
-  border-radius: 10px;
 
+}
+
+.gallery-image {
+  border: 5px solid rgb(56, 55, 55);
+  padding: 10px;
 }
 
 .About-text {
@@ -83,14 +87,13 @@ a {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #00000045;
+  background-color: #0000007c;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   border: none;
   box-shadow: 5px 5px 10px lightgray;
-  border-radius: 10px;
 
 }
 
@@ -208,7 +211,6 @@ a {
   align-items: center;
   margin: 20px 0;
   padding: 20px;
-  cursor: pointer;
 }
 
 .what_we2 {
@@ -218,16 +220,6 @@ a {
   font-weight: bold;
   padding: 5px;
   width: auto;
-}
-
-.mediaQuary4 {
-  width: auto;
-}
-
-
-.col-sm-3:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  transform: scale3d(2);
 }
 
 
@@ -285,16 +277,18 @@ a {
 }
 
 .hossceNa {
-  flex: 0 0 auto;
-  width: 20%;
-  margin: 10px 12px;
-  padding: 10px;
   border: none;
+  width: 100%;
   box-shadow: 5px 5px 10px lightgray;
   border-radius: 10px;
   text-align: center;
   transition: all 0.3s;
   background-color: #fff;
+  padding: 20px;
+}
+
+.hossceNa img {
+  height: 150px;
 }
 
 
@@ -376,17 +370,6 @@ a {
   background-color: rgba(0, 0, 0, 0.11);
 }
 
-.col-sm-3 {
-  flex: 0 0 auto;
-  width: auto;
-  border: none;
-  box-shadow: 5px 5px 10px lightgray;
-  border-radius: 10px;
-  padding: 19px;
-  text-align: center;
-  transition: all 0.3s;
-
-}
 
 .more-btn {
   color: #fff;

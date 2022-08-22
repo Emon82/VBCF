@@ -6,7 +6,7 @@ import './header.css';
 
 export default function Header() {
     return (
-        <div className='sticky-top'>
+        <div className=''>
 
             <div className="header-bg-white">
                 <div className="container py-3">
