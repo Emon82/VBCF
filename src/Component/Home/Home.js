@@ -25,7 +25,6 @@ import model9 from '../Image/model9.jpg';
 import what_we1 from '../Image/what_we1.jpg';
 import what_we2 from '../Image/what_we2.jpg';
 import what_we3 from '../Image/what_we3.jpg';
-import what_we4 from '../Image/what_we4.jpg';
 import './home.css';
 
 const Home = () => {
@@ -44,11 +43,8 @@ const Home = () => {
 
     <div>
 
-      <section>
+      <section className='cover'>
         <div className="container">
-          {/* <div className="card bg-dark text-white">
-            <img className="card-img" src={image} alt="Card image" />
-          </div> */}
           <ControlledCarousel im={image} />
         </div>
       </section>
@@ -103,36 +99,33 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
       <section className='mediaQuary4'>
         <div class="what_we2">
           <h1>What we do</h1>
         </div>
         <div class="container">
           <div class="row">
-            <div className='hossceNa'>
-            <div class="col-sm-6">
+            <div class="col-sm-3 hossceNa">
               <img src={what_we1} alt="" />
               <div class="">
-                <span>Western Region Bangla School</span>
+                <span>Victorian Bangladeshi Cultural Society</span>
               </div>
               <div class="more-btn">
                 <button type="button" class="btn btn-secondary" style={{ width: "50% ;" }}>More</button>
               </div>
-              </div>
             </div>
-            <div className='hossceNa'>
-            <div class="col-sm-6">
+            <div class="col-sm-3 hossceNa">
               <img src={what_we2} alt="" />
               <div class="">
-                <span>Victorian Bangladeshi Sports Club</span>
+                <span>Victorian Bangladeshi Cultural Society</span>
               </div>
               <div class="more-btn">
                 <button type="button" class="btn btn-secondary" style={{ width: "50% ;" }}>More</button>
               </div>
             </div>
-            </div>
-            <div className='hossceNa'>
-            <div class="col-sm-6">
+            <div class="col-sm-3 hossceNa">
               <img src={what_we3} alt="" />
               <div class="">
                 <span>Victorian Bangladeshi Cultural Society</span>
@@ -140,23 +133,61 @@ const Home = () => {
               <div class="more-btn">
                 <button type="button" class="btn btn-secondary" style={{ width: "50% ;" }}>More</button>
               </div>
-              </div>
             </div>
-            <div className='hossceNa'>
-            <div class="col-sm-6">
-              <img src={what_we4} alt="" />
+            <div class="col-sm-3 hossceNa ">
+              <img src={what_we1} alt="" />
               <div class="">
-                <span>Victorian Bangla Mobile Library</span>
+                <span>Victorian Bangladeshi Cultural Society</span>
               </div>
               <div class="more-btn">
                 <button type="button" class="btn btn-secondary" style={{ width: "50% ;" }}>More</button>
               </div>
             </div>
+            <div class="col-sm-3 hossceNa">
+              <img src={what_we1} alt="" />
+              <div class="">
+                <span>Victorian Bangladeshi Cultural Society</span>
+              </div>
+              <div class="more-btn">
+                <button type="button" class="btn btn-secondary" style={{ width: "50% ;" }}>More</button>
+              </div>
+              
+            </div>
+            <div class="col-sm-3 hossceNa">
+              <img src={what_we2} alt="" />
+              <div class="">
+                <span>Victorian Bangladeshi Cultural Society</span>
+              </div>
+              <div class="more-btn">
+                <button type="button" class="btn btn-secondary" style={{ width: "50% ;" }}>More</button>
+              </div>
+            </div>
+            <div class="col-sm-3 hossceNa">
+              <img src={what_we1} alt="" />
+              <div class="">
+                <span>Victorian Bangladeshi Cultural Society</span>
+              </div>
+              <div class="more-btn">
+                <button type="button" class="btn btn-secondary" style={{ width: "50% ;" }}>More</button>
+              
+              </div>
+            </div>
+            <div class="col-sm-3 hossceNa">
+              <img src={what_we3} alt="" />
+              <div class="">
+                <span>Victorian Bangladeshi Cultural Society</span>
+              </div>
+              <div class="more-btn">
+                <button type="button" class="btn btn-secondary" style={{ width: "50% ;" }}>More</button>
+              </div>
+             
             </div>
           </div>
-          
         </div>
       </section>
+
+
+      
       <section className='mediaQuary5'>
         <div class="what_we2">
           <h1>VBCF programs</h1>
@@ -166,68 +197,66 @@ const Home = () => {
         <div class="back_clor">
           <div class="container">
             <div class="row" style={{ textAalign: "-webkit-center;" }}>
-              <div class="col-6">
-                <div class="main-div">
+              <div class="col-6 main-div">
+                
                   <img src={backgroundImage1} alt="" />
                   <div class="backdrop">
                     <h4 style={{ textAlign: "center" }}>
                       <a style={{ color: "white" }} href=""> Facebook Session on Centrelink and Govt. Financial Support package
                         during coronavirus situation</a>
                     </h4>
-                  </div>
                 </div>
               </div>
-              <div class="col-6">
-                <div class="main-div">
+              <div class="col-6 main-div">
+                
                   <img src={backgroundImage2} alt="" />
                   <div class="backdrop">
                     <h4 style={{ textAlign: "center" }}>
                       <a style={{ color: "white" }} href=""> Live Facebook Session on Finance and banking support during
                         coronavirus situation</a>
                     </h4>
-                  </div>
+                  
                 </div>
               </div>
-              <div class="col-6">
-                <div class="main-div">
+              <div class="col-6 main-div">
+               
                   <img src={backgroundImage3} alt="" />
                   <div class="backdrop">
                     <h4 style={{ textAlign: "center" }}>
                       <a style={{ color: "white" }} href=""> Live Facebook Session on Current coronavirus situation</a>
                     </h4>
-                  </div>
+                 
                 </div>
               </div>
-              <div class="col-6">
-                <div class="main-div">
+              <div class="col-6 main-div">
+                
                   <img src={backgroundImage4} alt="" />
                   <div class="backdrop">
                     <h4 style={{ textAlign: "center" }}>
                       <a style={{ color: "white" }} href=""> WRBS KID EID Anandamela</a>
                     </h4>
                   </div>
-                </div>
+                
               </div>
-              <div class="col-6">
-                <div class="main-div">
+              <div class="col-6 main-div">
                   <img src={backgroundImage5} alt="" />
                   <div class="backdrop">
                     <h4 style={{ textAlign: "center" }}>
                       <a style={{ color: "white" }} href="">
                         IMLD 2020</a>
                     </h4>
-                  </div>
+                 
                 </div>
               </div>
-              <div class="col-6">
-                <div class="main-div">
+              <div class="col-6 main-div">
+                
                   <img src={backgroundImage6} alt="" />
                   <div class="backdrop">
                     <h4 style={{ textAlign: "center" }}>
                       <a style={{ color: "white" }} href="">
                         Australia Day Parade 2020</a>
                     </h4>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -242,41 +271,41 @@ const Home = () => {
         {/* <!-- Trigger/Open The Modal --> */}
         <div class="container">
           <div class="row">
-            <div class="col-sm-6 col-md-3">
-              <button onClick={() => { setshowModalImage(model1); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model1} alt="" /></button>
+            <div class="col-md-3 myBtn">
+              <button onClick={() => { setshowModalImage(model1); setshowModal(true) }} ><img class="Image-container" src={model1} alt="" /></button>
             </div>
-            <div class="col-sm-6 col-md-3">
-              <button onClick={() => { setshowModalImage(model2); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model2} alt="" /></button>
+            <div class="col-md-3 myBtn">
+              <button onClick={() => { setshowModalImage(model2); setshowModal(true) }} ><img class="Image-container" src={model2} alt="" /></button>
             </div>
-            <div class="col-sm-6 col-md-3">
-              <button onClick={() => { setshowModalImage(model3); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model3} alt="" /></button>
+            <div class="col-md-3 myBtn myBtn">
+              <button onClick={() => { setshowModalImage(model3); setshowModal(true) }} ><img class="Image-container" src={model3} alt="" /></button>
             </div>
-            <div class="col-sm-6 col-md-3">
-              <button onClick={() => { setshowModalImage(model4); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model4} alt="" /></button>
+            <div class="col-md-3 myBtn">
+              <button onClick={() => { setshowModalImage(model4); setshowModal(true) }} ><img class="Image-container" src={model4} alt="" /></button>
             </div>
-            <div class="col-sm-6 col-md-3">
-              <button onClick={() => { setshowModalImage(model5); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model5} alt="" /></button>
+            <div class="col-md-3 myBtn">
+              <button onClick={() => { setshowModalImage(model5); setshowModal(true) }} ><img class="Image-container" src={model5} alt="" /></button>
             </div>
-            <div class="col-sm-6 col-md-3">
-              <button onClick={() => { setshowModalImage(model6); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model6} alt="" /></button>
+            <div class="col-md-3 myBtn">
+              <button onClick={() => { setshowModalImage(model6); setshowModal(true) }} ><img class="Image-container" src={model6} alt="" /></button>
             </div>
-            <div class="col-sm-6 col-md-3">
-              <button onClick={() => { setshowModalImage(model7); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model7} alt="" /></button>
+            <div class="col-md-3 myBtn">
+              <button onClick={() => { setshowModalImage(model7); setshowModal(true) }} ><img class="Image-container" src={model7} alt="" /></button>
             </div>
-            <div class="col-sm-6 col-md-3">
-              <button onClick={() => { setshowModalImage(model8); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model8} alt="" /></button>
+            <div class="col-md-3 myBtn">
+              <button onClick={() => { setshowModalImage(model8); setshowModal(true) }} ><img class="Image-container" src={model8} alt="" /></button>
             </div>
-            <div class="col-sm-6 col-md-3">
-              <button onClick={() => { setshowModalImage(model9); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model9} alt="" /></button>
+            <div class="col-md-3 myBtn">
+              <button onClick={() => { setshowModalImage(model9); setshowModal(true) }} ><img class="Image-container" src={model9} alt="" /></button>
             </div>
-            <div class="col-sm-6 col-md-3">
-              <button onClick={() => { setshowModalImage(model10); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model10} alt="" /></button>
+            <div class="col-md-3 myBtn">
+              <button onClick={() => { setshowModalImage(model10); setshowModal(true) }} ><img class="Image-container" src={model10} alt="" /></button>
             </div>
-            <div class="col-sm-6 col-md-3">
-              <button onClick={() => { setshowModalImage(model11); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model11} alt="" /></button>
+            <div class="col-md-3 myBtn">
+              <button onClick={() => { setshowModalImage(model11); setshowModal(true) }} ><img class="Image-container" src={model11} alt="" /></button>
             </div>
-            <div class="col-sm-6 col-md-3">
-              <button onClick={() => { setshowModalImage(model12); setshowModal(true) }} class="myBtn"><img class="Image-container" src={model12} alt="" /></button>
+            <div class="col-md-3 myBtn">
+              <button onClick={() => { setshowModalImage(model12); setshowModal(true) }} ><img class="Image-container" src={model12} alt="" /></button>
             </div>
           </div>
           <div id="myModal" class={`modal ${showModal ? "show_modal" : ""}`}>

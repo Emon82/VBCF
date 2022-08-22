@@ -145,7 +145,7 @@ export default function footer() {
       </section>
       <section>
         <div className="copiright">
-          <h6>Victorian Bangladeshi Community Foundation, PO BOX 1348 Werribee Plaza, Vic 3029, Australia</h6>
+          <h6 className='footer'>Victorian Bangladeshi Community Foundation, PO BOX 1348 Werribee Plaza, Vic 3029, Australia</h6>
           <span>©2017 by Victorian Bangladeshi Community Foundation - VBCF.</span>
         </div>
       </section>
