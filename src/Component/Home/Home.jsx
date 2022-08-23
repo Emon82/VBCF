@@ -47,7 +47,7 @@ const Home = () => {
         <div class="row">
           <div class="col-sm-12">
             <div class="about">
-              <h1 class="About-text text-uppercase">About us</h1>
+              <h2 class="About-text text-uppercase">About us</h2>
               <div class="Victorian">
                 <h5 class="text-center">
                   Victorian Bangladeshi Community Foundation (VBCF) is
@@ -108,7 +108,7 @@ const Home = () => {
       </div>
 
       <div class="what_we2">
-        <h1 className="text-uppercase">What we do</h1>
+        <h2 className="text-uppercase">What we do</h2>
       </div>
       <div class="container py-3">
         <div class="row gy-4 justify-content-start">
@@ -181,7 +181,7 @@ const Home = () => {
       </div>
 
       <div class="what_we2">
-        <h1 className="text-uppercase">VBCF programs</h1>
+        <h2 className="text-uppercase">VBCF programs</h2>
       </div>
 
       <div class="container py-3">
@@ -473,6 +473,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <div class="video-channel">
         <h2>VBCF VIDEO CHANNEL </h2>
       </div>
