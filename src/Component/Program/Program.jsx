@@ -6,7 +6,8 @@ export default function Program() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch("http://192.168.0.147:8000/api/posts")
+    // fetch("http://192.168.0.147:8000/api/posts")
+    fetch("http://localhost:8000/api/posts")
       .then((response) => response.json())
       .then((data) => setPosts(data));
   }, []);

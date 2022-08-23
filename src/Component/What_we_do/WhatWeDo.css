@@ -5,10 +5,35 @@
     font-size: 49px;
     font-weight: bold;
 }
+
+.bd {
+    background-color: green;
+    color: red;
+    margin: 20px 0;
+}
+
+.costomizeImg {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #00000033;
+    padding: 5px;
+    background-color: #fff;
+
+}
+
+@media screen and (max-width: 768px) {
+    .costomizeImg img {
+        height: 300px;
+    }
+}
+
 .aboutWe{
-    margin-top: 10px;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: #fff;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px #00000033;
+
 }
 .btnCostomize{
     text-align: center;
@@ -33,3 +58,13 @@
         margin: 20px;
         padding: 10px;
     }
+
+    .form-button-card {
+        background-color: #fff;
+    }
+
+    .form-button-card .fa-wpforms {
+        font-size: 15rem;
+        color: #404B97;
+    }
+

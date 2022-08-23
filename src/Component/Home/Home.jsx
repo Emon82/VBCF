@@ -34,7 +34,7 @@ const Home = () => {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetch("http://192.168.0.147:8000/api/videos")
+    fetch("http://localhost:8000/api/videos")
       .then((response) => response.json())
       .then((data) => setVideos(data));
   }, []);
