@@ -105,41 +105,32 @@ a {
 
 
 
-.modal {
+/* .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 1;
-  /* Sit on top */
   padding-top: 100px;
-  /* Location of the box */
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.4);
-  /* Black w/ opacity */
-}
+} */
 
 .show_modal {
   display: block !important;
 }
 
 /* Modal Content */
-.modal-content {
+/* .modal-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-}
+} */
 
 /* The Close Button */
 .close {
@@ -176,19 +167,40 @@ a {
 
 .ifram {
   width: 100%;
+  height: 100%;
 }
 
-.btn-close {
-  position: absolute;
-  right: -30px;
-  top: 0;
+.iframVideo {
+  height: 600px;
+  width: 100%;
+  /* padding: 20px; */
 }
+
+@media screen and (max-width: 768px) {
+  .iframVideo {
+    height: 300px;
+  }
+
+  #imageModal img {
+    height: 400px;
+  }
+}
+
 
 .myVideoBtn {
-
   position: relative;
   width: 100%;
   height: 300px;
+}
+
+.videoOverlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.288); */
+  cursor: pointer;
 }
 
 
@@ -202,7 +214,7 @@ a {
 }
 
 .about {
-  background-color: #002749;
+  background-color: #487E3C;
   text-align: center;
   color: white;
   font-weight: bold;
@@ -218,7 +230,7 @@ a {
   text-align: center;
   color: white;
   font-weight: bold;
-  padding: 5px;
+  padding: 20px 5px;
   width: auto;
 }
 
@@ -267,13 +279,6 @@ a {
 
 .hard {
   text-align: center;
-}
-
-.copiright {
-  background-color: #002749;
-  color: aliceblue;
-  text-align: center;
-  padding: 10px;
 }
 
 .hossceNa {
@@ -425,24 +430,17 @@ a {
   text-align: center;
 }
 
-.copiright {
-  background-color: #002749;
-  color: aliceblue;
-  text-align: center;
-  padding: 10px;
-}
-
 .moreBtn {
   padding: 10px 30px;
   border-radius: 10px;
-  background-color: green;
+  background-color: #DE6750;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 
 .moreBtn:hover {
-  background-color: rgba(0, 128, 0, 0.589);
+  background-color: #ff000da2;
 }
 
 .carousel-image {

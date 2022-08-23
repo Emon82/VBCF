@@ -29,8 +29,8 @@ import "./home.css";
 const Home = () => {
   const [showModal, setshowModal] = useState(false);
   const [modalImage, setshowModalImage] = useState("");
-  const [showModalV, setshowModalV] = useState(false);
   const [modalVideo, setshowModalVideo] = useState("");
+  const [modalVideoTitle, setModalVideoTitle] = useState("");
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
@@ -279,8 +279,9 @@ const Home = () => {
                 className="gallery-image"
                 onClick={() => {
                   setshowModalImage(model1);
-                  setshowModal(true);
                 }}
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
               >
                 <img class="img-fluid w-100" src={model1} alt="" />
               </div>
@@ -290,8 +291,9 @@ const Home = () => {
                 className="gallery-image"
                 onClick={() => {
                   setshowModalImage(model2);
-                  setshowModal(true);
                 }}
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
               >
                 <img class="img-fluid w-100" src={model2} alt="" />
               </div>
@@ -301,8 +303,9 @@ const Home = () => {
                 className="gallery-image"
                 onClick={() => {
                   setshowModalImage(model3);
-                  setshowModal(true);
                 }}
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
               >
                 <img class="img-fluid w-100" src={model3} alt="" />
               </div>
@@ -312,8 +315,9 @@ const Home = () => {
                 className="gallery-image"
                 onClick={() => {
                   setshowModalImage(model4);
-                  setshowModal(true);
                 }}
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
               >
                 <img class="img-fluid w-100" src={model4} alt="" />
               </div>
@@ -323,8 +327,9 @@ const Home = () => {
                 className="gallery-image"
                 onClick={() => {
                   setshowModalImage(model5);
-                  setshowModal(true);
                 }}
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
               >
                 <img class="img-fluid w-100" src={model5} alt="" />
               </div>
@@ -334,8 +339,9 @@ const Home = () => {
                 className="gallery-image"
                 onClick={() => {
                   setshowModalImage(model6);
-                  setshowModal(true);
                 }}
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
               >
                 <img class="img-fluid w-100" src={model6} alt="" />
               </div>
@@ -345,8 +351,9 @@ const Home = () => {
                 className="gallery-image"
                 onClick={() => {
                   setshowModalImage(model7);
-                  setshowModal(true);
                 }}
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
               >
                 <img class="img-fluid w-100" src={model7} alt="" />
               </div>
@@ -356,8 +363,9 @@ const Home = () => {
                 className="gallery-image"
                 onClick={() => {
                   setshowModalImage(model8);
-                  setshowModal(true);
                 }}
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
               >
                 <img class="img-fluid w-100" src={model8} alt="" />
               </div>
@@ -367,8 +375,9 @@ const Home = () => {
                 className="gallery-image"
                 onClick={() => {
                   setshowModalImage(model9);
-                  setshowModal(true);
                 }}
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
               >
                 <img class="img-fluid w-100" src={model9} alt="" />
               </div>
@@ -378,8 +387,9 @@ const Home = () => {
                 className="gallery-image"
                 onClick={() => {
                   setshowModalImage(model10);
-                  setshowModal(true);
                 }}
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
               >
                 <img class="img-fluid w-100" src={model10} alt="" />
               </div>
@@ -389,8 +399,9 @@ const Home = () => {
                 className="gallery-image"
                 onClick={() => {
                   setshowModalImage(model11);
-                  setshowModal(true);
                 }}
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
               >
                 <img class="img-fluid w-100" src={model11} alt="" />
               </div>
@@ -400,76 +411,146 @@ const Home = () => {
                 className="gallery-image"
                 onClick={() => {
                   setshowModalImage(model12);
-                  setshowModal(true);
                 }}
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
               >
                 <img class="img-fluid w-100" src={model12} alt="" />
               </div>
             </div>
           </div>
-          <div id="myModal" class={`modal ${showModal ? "show_modal" : ""}`}>
+          {/* <div id="myModal" class={`modal ${showModal ? "show_modal" : ""}`}>
             <div class="modal-content">
               <span onClick={() => setshowModal(false)} class="close">
                 &times;
               </span>
               <img style={{ height: "700px" }} src={modalImage} alt="" />
             </div>
-          </div>
-        </div>
-      </section>
-      <section className="mediaQuary8">
-        <div class="video-channel">
-          <h2>VBCF VIDEO CHANNEL </h2>
-        </div>
-        <div class="container">
-          <div class="row">
-            {videos.length &&
-              videos.map((video) => (
-                <div class="col-sm-4">
-                  <button
-                    onClick={() => {
-                      setshowModalVideo(video.url);
-                      setshowModalV(true);
-                    }}
-                    class="myVideoBtn"
-                  >
-                    <div class="layer"></div>
-                    <iframe
-                      class="ifram"
-                      src={video.url}
-                      title={video.title}
-                      allowfullscreen
-                    ></iframe>
-                  </button>
-                  <span class="ANANDAMELA">{video.title}</span>
-                </div>
-              ))}
+          </div> */}
 
-            <div id="myid" class={`modal ${showModalV ? "show_modal" : ""}`}>
+          <div
+            id="imageModal"
+            class={`modal fade 
+            `}
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="imageModalModalLabel"
+            aria-hidden="true"
+          >
+            <div className="modal-dialog modal-xl" role="document">
               <div class="modal-content">
-                <span
-                  onClick={() => {
-                    setshowModalV(false);
-                    setshowModalVideo("");
-                  }}
-                  id="vclose"
-                  class="close"
-                >
-                  &times;
-                </span>
-                <iframe
-                  height={713}
-                  width={1268}
-                  class="ifram"
-                  src={modalVideo}
-                  title="YouTube video"
-                  allowfullscreen
-                ></iframe>
+                <div class="modal-header">
+                  <h5 class="modal-title" id="imageModalModalLabel">
+                    Gallery Image
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div className="modal-body">
+                  <img
+                    style={{ height: "650px" }}
+                    className="img-fluid w-100"
+                    src={modalImage}
+                    alt=""
+                  />
+                </div>
+
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <div class="video-channel">
+        <h2>VBCF VIDEO CHANNEL </h2>
+      </div>
+      <div class="container py-3">
+        <div class="row gy-5">
+          {videos.length &&
+            videos.map((video) => (
+              <div class="col-sm-4">
+                <div
+                  onClick={() => {
+                    setshowModalVideo(video.url);
+                    setModalVideoTitle(video.title);
+                    // setshowModalV(true);
+                  }}
+                  class="myVideoBtn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#videoModal"
+                >
+                  <div className="videoOverlay"></div>
+                  <iframe
+                    class="ifram"
+                    src={video.url}
+                    title={video.title}
+                    allowfullscreen
+                  ></iframe>
+                </div>
+                <span class="ANANDAMELA">{video.title}</span>
+              </div>
+            ))}
+
+          <div
+            id="videoModal"
+            class={`modal fade 
+            `}
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="videoModalModalLabel"
+            aria-hidden="true"
+          >
+            <div className="modal-dialog modal-xl" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="videoModalModalLabel">
+                    {modalVideoTitle}
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    onClick={() => setshowModalVideo("")}
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div className="modal-body">
+                  <iframe
+                    // width={1268}
+                    // height={713}
+                    class="iframVideo"
+                    src={modalVideo}
+                    title="YouTube video"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       {/* <section className="mediaQuary9">
         <div class="container">
           <div class="row">
