@@ -47,7 +47,7 @@ const Home = () => {
         <div class="row">
           <div class="col-sm-12">
             <div class="about">
-              <h2 class="About-text text-uppercase">About us</h2>
+              <h3 class="About-text text-uppercase">About us</h3>
               <div class="Victorian">
                 <h5 class="text-center">
                   Victorian Bangladeshi Community Foundation (VBCF) is
@@ -66,10 +66,10 @@ const Home = () => {
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-6 social-media-container">
             <div className="card">
               <div className="card-body">
-                <h1 class="card-title">VBCF social media</h1>
+                <h3 class="card-title h1-responsive">VBCF social media</h3>
                 <img src={cardimage} class="card_image" alt="" />
                 <a href="http://">
                   Day -2 Bangladesh High Commission Consulate Camp In Melbourne.
@@ -99,8 +99,8 @@ const Home = () => {
           <div class="col-sm-6">
             <div class="card large-card">
               <div class="card-body">
-                <h1 class="card-title">VBCF event calendar</h1>
-                <h3 class="Upcoming_event">Upcoming events</h3>
+                <h3 class="card-title h1-responsive">VBCF event calendar</h3>
+                <h4 class="Upcoming_event">Upcoming events</h4>
               </div>
             </div>
           </div>
@@ -108,7 +108,7 @@ const Home = () => {
       </div>
 
       <div class="what_we2">
-        <h2 className="text-uppercase">What we do</h2>
+        <h3 className="text-uppercase h1-responsive">What we do</h3>
       </div>
       <div class="container py-3">
         <div class="row gy-4 justify-content-start">
@@ -181,7 +181,7 @@ const Home = () => {
       </div>
 
       <div class="what_we2">
-        <h2 className="text-uppercase">VBCF programs</h2>
+        <h3 className="text-uppercase">VBCF programs</h3>
       </div>
 
       <div class="container py-3">
@@ -268,7 +268,7 @@ const Home = () => {
       </div>
       <section className="mediaQuary7">
         <div class="photo-gallary">
-          <h2>VBCF PHOTO GALLERY</h2>
+          <h3>VBCF PHOTO GALLERY</h3>
         </div>
 
         {/* <!-- Trigger/Open The Modal --> */}
@@ -475,7 +475,7 @@ const Home = () => {
       </section>
 
       <div class="video-channel">
-        <h2>VBCF VIDEO CHANNEL </h2>
+        <h3>VBCF VIDEO CHANNEL </h3>
       </div>
       <div class="container py-3">
         <div class="row gy-5">

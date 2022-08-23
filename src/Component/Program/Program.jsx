@@ -18,7 +18,7 @@ export default function Program() {
             <div class="card post-card">
               <div class="card-body">
                 <div className="card-title">
-                  <h2>Posts</h2>
+                  <h2>Programs</h2>
                 </div>
               </div>
             </div>

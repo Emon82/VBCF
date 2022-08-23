@@ -418,3 +418,7 @@ a {
     height: 300px;
   }
 }
+
+.social-media-container .card {
+  margin: 25px 0;
+}
