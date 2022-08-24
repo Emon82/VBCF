@@ -1,25 +1,37 @@
-.aboutImage1{
-    border: 2px solid;
-    width: 70%;
-height: 300px;
+.aboutImage1 {
+  border: 2px solid;
+  width: 70%;
+  height: 300px;
 
-    margin: 10px;
+  margin: 10px;
 }
-.aboutImage2{
-    border: 2px solid;
-    width: 70%;
-height: 214px;
-margin: 10px;
+.aboutImage2 {
+  border: 2px solid;
+  width: 70%;
+  height: 214px;
+  margin: 10px;
 }
-.aboutImage4{
-    border: 2px solid;
-    width: 70%;
-height: 106px;
-margin: 10px;
+.aboutImage4 {
+  border: 2px solid;
+  width: 70%;
+  height: 106px;
+  margin: 10px;
 }
-.aboutImage3{
-    border: 2px solid;
-    width: 70%;
-height: 214px;
-margin: 10px;
+.aboutImage3 {
+  border: 2px solid;
+  width: 70%;
+  height: 214px;
+  margin: 10px;
+}
+
+.about-header-container {
+  padding: 35px 0;
+}
+
+.about-title {
+  padding: 20px 0;
+  background-color: green;
+  font-size: 40px;
+  font-weight: 700;
+  color: red;
 }
