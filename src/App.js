@@ -12,7 +12,7 @@ import WhatWeDo from "./Component/What_we_do/WhatWeDo";
 function App() {
   return (
     <div>
-         <BrowserRouter>
+      <BrowserRouter>
         <Header />
         <div class="mainContainer">
           <Routes>

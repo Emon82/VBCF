@@ -151,7 +151,7 @@ export default function footer() {
                             </div>
                           </div>
 
-                          <div className="text-center text-md-left">
+                          <div className="text-md-left">
                             <button type="submit" className="btn btn-primary">
                               Send
                             </button>

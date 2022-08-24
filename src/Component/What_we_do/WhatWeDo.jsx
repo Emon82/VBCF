@@ -3,7 +3,6 @@ import backgroundImage6 from "../Image/backgroundImage6.jpg";
 import model1 from "../Image/model1.jpg";
 import model2 from "../Image/model2.jpg";
 import model3 from "../Image/model3.jpg";
-import model4 from "../Image/model4.jpg";
 import what_we1 from "../Image/what_we1.jpg";
 import "./WhatWeDo.css";
 export default function WhatWeDo() {
@@ -89,152 +88,153 @@ export default function WhatWeDo() {
           </div>
         </div>
       </div>
-      <div className="container">
+      <div className="container py-3">
         <h2 className="title bd">WRBS Policies</h2>
 
-        <div className="row">
-          <div
-            className="col-3"
-            style={{ backgroundColor: "rgb(104, 176, 77)" }}
-          >
-            <img className="cardImage" src={model1} alt="" />
-            <h5 className="ImgTitle"> WRBS Child Safety Policy</h5>
-            <p>This child safe policy is publicly available in our website</p>
-            <a href="#" class="card-link">
-              Read More
-            </a>
+        <div className="row policy-cards">
+          <div className="col-md-3">
+            <div class="policy-card">
+              <i class="fa fa-lightbulb-o large-icon" aria-hidden="true"></i>
+              <h4 className="ImgTitle"> WRBS Child Safety Policy</h4>
+              <p>This child safe policy is publicly available in our website</p>
+              <a href="#">
+                Read More <i className="fa fa-chevron-right"></i>
+              </a>
+            </div>
           </div>
-          <div
-            className="col-3"
-            style={{ backgroundColor: "rgb(218, 85, 85)" }}
-          >
-            <img className="cardImage" src={model2} alt="" />
-            <h5 className="ImgTitle">WRBS Code of Conduct</h5>
-            <p>
-              This Child Safe Code of Conduct is publicly available in our
-              website
-            </p>
-            <a href="#" class="card-link">
-              Read More
-            </a>
+          <div className="col-md-3">
+            <div class="policy-card">
+              <i class="fa fa-balance-scale large-icon"></i>
+              <h4 className="ImgTitle">WRBS Code of Conduct</h4>
+              <p>
+                This Child Safe Code of Conduct is publicly available in our
+                website
+              </p>
+              <a href="#">
+                Read More <i className="fa fa-chevron-right"></i>
+              </a>
+            </div>
           </div>
-          <div
-            className="col-3"
-            style={{ backgroundColor: "rgb(104, 176, 77)" }}
-          >
-            <img className="cardImage" src={model3} alt="" />
-            <h5 className="ImgTitle">WRBS Anti Bullying Policy</h5>
-            <p>
-              Western Region Bengali School Inc. is committed to provide a safe
-              and{" "}
-            </p>
-            <a href="#" class="card-link">
-              Read More
-            </a>
+          <div className="col-md-3">
+            <div class="policy-card">
+              <i class="fa fa-gavel large-icon" aria-hidden="true"></i>
+
+              <h4 className="ImgTitle">WRBS Anti Bullying Policy</h4>
+              <p>
+                Western Region Bengali School Inc. is committed to provide a
+                safe and{" "}
+              </p>
+              <a href="#">
+                Read More <i className="fa fa-chevron-right"></i>
+              </a>
+            </div>
           </div>
-          <div
-            className="col-3"
-            style={{ backgroundColor: "rgb(218, 85, 85)" }}
-          >
-            <img className="cardImage" src={model4} alt="" />
-            <h5 className="ImgTitle">WRBS Child Safety factsheet for Parent</h5>
-            <p>How to keep children safe</p>
-            <a href="#" class="card-link">
-              Read More
-            </a>
+          <div className="col-md-3">
+            <div class="policy-card">
+              <i class="fa fa-child large-icon"></i>
+              <h4 className="ImgTitle">
+                WRBS Child Safety factsheet for Parent
+              </h4>
+              <p>How to keep children safe</p>
+              <a href="#">
+                Read More <i className="fa fa-chevron-right"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      {/* // */}
-      <div className="container">
-        <h1 className="hunfun">Meet The Team</h1>
-        <div className="circleCard">
+
+      <div className="container py-3">
+        <h2 className="title bd">Meet The Team</h2>
+        <div className="circleCard py-4">
           <div className="row">
             <div className="col-4">
               <img className="circle" src={model1} alt="" />
               <p>Morshed Kamal</p>
-              <h5 className="ImgTitle"> Principal</h5>
+              <h4 className="teamTitle">Principal</h4>
             </div>
             <div className="col-4">
               <img className="circle" src={model2} alt="" />
 
               <p>Tamanna Rumin</p>
-              <h5 className="ImgTitle">Asst. Principal</h5>
+              <h4 className="teamTitle">Asst. Principal</h4>
             </div>
             <div className="col-4">
               <img className="circle" src={model3} alt="" />
 
-              <p> Kazi Iqbal Hossain </p>
-              <h5 className="ImgTitle"></h5>
+              <p>Kazi Iqbal Hossain </p>
+              <h4 className="teamTitle"></h4>
             </div>
           </div>
         </div>
       </div>
-      <div className="container">
-        <div className="circleCard">
+
+      <div className="container pb-3">
+        <div className="circleCard py-4">
           <div className="row">
             <div className="col-4">
               <img className="circle" src={model1} alt="" />
               <p>Morshed Kamal</p>
-              <h5 className="ImgTitle"> Principal</h5>
+              <h4 className="teamTitle">Principal</h4>
             </div>
             <div className="col-4">
               <img className="circle" src={model2} alt="" />
 
               <p>Tamanna Rumin</p>
-              <h5 className="ImgTitle">Asst. Principal</h5>
+              <h4 className="teamTitle">Asst. Principal</h4>
             </div>
             <div className="col-4">
               <img className="circle" src={model3} alt="" />
 
-              <p> Kazi Iqbal Hossain </p>
-              <h5 className="ImgTitle"></h5>
+              <p>Kazi Iqbal Hossain </p>
+              <h4 className="teamTitle"></h4>
             </div>
           </div>
         </div>
       </div>
+
       <div className="container">
-        <div className="circleCard">
+        <div className="circleCard py-4">
           <div className="row">
             <div className="col-4">
               <img className="circle" src={model1} alt="" />
               <p>Morshed Kamal</p>
-              <h5 className="ImgTitle"> Principal</h5>
+              <h4 className="teamTitle"> Principal</h4>
             </div>
             <div className="col-4">
               <img className="circle" src={model2} alt="" />
 
               <p>Tamanna Rumin</p>
-              <h5 className="ImgTitle">Asst. Principal</h5>
+              <h4 className="teamTitle">Asst. Principal</h4>
             </div>
             <div className="col-4">
               <img className="circle" src={model3} alt="" />
 
               <p> Kazi Iqbal Hossain </p>
-              <h5 className="ImgTitle"></h5>
+              <h4 className="teamTitle"></h4>
             </div>
           </div>
         </div>
       </div>
-      <div className="container">
-        <div className="circleCard">
+      <div className="container pb-3">
+        <div className="circleCard py-4">
           <div className="row">
             <div className="col-4">
               <img className="circle" src={model1} alt="" />
               <p>Morshed Kamal</p>
-              <h5 className="ImgTitle"> Principal</h5>
+              <h4 className="teamTitle"> Principal</h4>
             </div>
             <div className="col-4">
               <img className="circle" src={model2} alt="" />
 
               <p>Tamanna Rumin</p>
-              <h5 className="ImgTitle">Asst. Principal</h5>
+              <h4 className="teamTitle">Asst. Principal</h4>
             </div>
             <div className="col-4">
               <img className="circle" src={model3} alt="" />
 
               <p> Kazi Iqbal Hossain </p>
-              <h5 className="ImgTitle"></h5>
+              <h4 className="teamTitle"></h4>
             </div>
           </div>
         </div>

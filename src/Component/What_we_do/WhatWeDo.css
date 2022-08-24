@@ -1,4 +1,4 @@
-.title{
+.title {
     text-align: center;
     margin: 10px;
     padding: 10px;
@@ -27,7 +27,7 @@
     }
 }
 
-.aboutWe{
+.aboutWe {
     text-align: center;
     background-color: #fff;
     height: 100%;
@@ -35,36 +35,98 @@
     box-shadow: 0 1px 2px #00000033;
 
 }
-.btnCostomize{
+
+.btnCostomize {
     text-align: center;
 }
-.cardImage{
+
+.cardImage {
     width: 100%;
-    
+
 }
-.circle{
+
+.circle {
     background: lightblue;
     border-radius: 50%;
     width: 200px;
     height: 200px;
 }
-    .circleCard{
-        text-align: center;
-        background-color: brown;
-        margin-top: 20px;
-    }
-    .hunfun{
-        text-align: center;
-        margin: 20px;
-        padding: 10px;
-    }
 
-    .form-button-card {
-        background-color: #fff;
-    }
+.circleCard {
+    text-align: center;
+    background-color: #ED4545;
+}
 
-    .form-button-card .fa-wpforms {
-        font-size: 15rem;
-        color: #404B97;
-    }
+.circleCard p {
+    padding: 5px 0;
+    font-style: italic;
+    font-size: 18px;
+}
 
+.teamTitle {
+
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 2px 2px #5c0a0a;
+
+}
+
+.hunfun {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.form-button-card {
+    background-color: #fff;
+}
+
+.form-button-card .fa-wpforms {
+    font-size: 15rem;
+    color: #404B97;
+}
+
+.policy-card {
+    padding: 20px;
+    background-color: #DA5555;
+
+    height: 500px;
+    text-align: center;
+}
+
+.large-icon {
+    font-size: 10rem;
+}
+
+.policy-card * {
+    color: #fff;
+    font-weight: 600;
+}
+
+.policy-card a {
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.policy-card a:hover {
+    font-size: 12px;
+    text-decoration: none;
+    color: green;
+}
+
+.policy-card a:hover .fa-chevron-right {
+    font-size: 12px;
+    text-decoration: none;
+    color: green;
+}
+
+.ImgTitle {
+    font-weight: 700;
+    text-decoration: uppercase;
+    padding: 20px 0;
+}
+
+.policy-cards .col-md-3:nth-child(2n+1) .policy-card {
+    background-color: #68B04D;
+
+}
