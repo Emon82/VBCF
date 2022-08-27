@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router";
 import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import About from "./Component/About/About";
+import Feedback from './Component/Feedback';
 import Footer from "./Component/Footer/footer";
 import Header from "./Component/Header/header";
 import Home from "./Component/Home/Home";
@@ -22,6 +23,7 @@ function App() {
             <Route path="/what_we_do" element={<WhatWeDo />} />
             <Route path="/about" element={<About />} />
             <Route path="/meettheteam" element={<MeetTheTeam />} />
+            <Route path="/feedback/:programId" element={<Feedback />} />
           </Routes>
         </div>
         <Footer />

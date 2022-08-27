@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import backgroundImage6 from "../Image/backgroundImage6.jpg";
 import model1 from "../Image/model1.jpg";
 import model2 from "../Image/model2.jpg";
@@ -81,9 +82,13 @@ export default function WhatWeDo() {
             <div class="form-button-card text-center p-3">
               <i class="fa fa-wpforms" aria-hidden="true"></i>
               <h3>WRBS-Online Feedback Form</h3>
-              <button type="button" className="btn btn-success">
+              <Link
+                to={"/feedback/1"}
+                type="button"
+                className="btn btn-success"
+              >
                 Submit Feedback
-              </button>
+              </Link>
             </div>
           </div>
         </div>
