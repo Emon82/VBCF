@@ -6,9 +6,11 @@ import backgroundImage3 from "../Image/backgroundImage3.jpg";
 import backgroundImage4 from "../Image/backgroundImage4.jpg";
 import backgroundImage5 from "../Image/backgroundImage5.jpg";
 import backgroundImage6 from "../Image/backgroundImage6.jpg";
+import beach from "../Image/beach.jpg";
 import cardimage from "../Image/cardImage.jpg";
 import image3 from "../Image/imag3.jpg";
 import image2 from "../Image/image2.jpg";
+import lalbagh from "../Image/lalbagh.jpg";
 import model1 from "../Image/model1.jpg";
 import model10 from "../Image/model10.jpg";
 import model11 from "../Image/model11.jpg";
@@ -41,7 +43,7 @@ const Home = () => {
   return (
     <div>
       <div className="container pt-3">
-        <CarouselFade im1={model9} im2={model12} im3={model11} im4={model10} />
+        <CarouselFade im1={lalbagh} im2={beach} im3={model11} im4={model10} />
       </div>
       <div class="container">
         <div class="row">
@@ -101,6 +103,96 @@ const Home = () => {
               <div class="card-body">
                 <h3 class="card-title h1-responsive">VBCF event calendar</h3>
                 <h4 class="Upcoming_event">Upcoming events</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur veniam suscipit aut error dicta, optio consequuntur
+                  iusto fugiat, dolores minus laboriosam reprehenderit cumque
+                  eius distinctio aperiam minima? Inventore, excepturi non.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur veniam suscipit aut error dicta, optio consequuntur
+                  iusto fugiat, dolores minus laboriosam reprehenderit cumque
+                  eius distinctio aperiam minima? Inventore, excepturi non.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur veniam suscipit aut error dicta, optio consequuntur
+                  iusto fugiat, dolores minus laboriosam reprehenderit cumque
+                  eius distinctio aperiam minima? Inventore, excepturi non.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur veniam suscipit aut error dicta, optio consequuntur
+                  iusto fugiat, dolores minus laboriosam reprehenderit cumque
+                  eius distinctio aperiam minima? Inventore, excepturi non.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur veniam suscipit aut error dicta, optio consequuntur
+                  iusto fugiat, dolores minus laboriosam reprehenderit cumque
+                  eius distinctio aperiam minima? Inventore, excepturi non.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur veniam suscipit aut error dicta, optio consequuntur
+                  iusto fugiat, dolores minus laboriosam reprehenderit cumque
+                  eius distinctio aperiam minima? Inventore, excepturi non.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur veniam suscipit aut error dicta, optio consequuntur
+                  iusto fugiat, dolores minus laboriosam reprehenderit cumque
+                  eius distinctio aperiam minima? Inventore, excepturi non.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur veniam suscipit aut error dicta, optio consequuntur
+                  iusto fugiat, dolores minus laboriosam reprehenderit cumque
+                  eius distinctio aperiam minima? Inventore, excepturi non.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur veniam suscipit aut error dicta, optio consequuntur
+                  iusto fugiat, dolores minus laboriosam reprehenderit cumque
+                  eius distinctio aperiam minima? Inventore, excepturi non.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur veniam suscipit aut error dicta, optio consequuntur
+                  iusto fugiat, dolores minus laboriosam reprehenderit cumque
+                  eius distinctio aperiam minima? Inventore, excepturi non.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur veniam suscipit aut error dicta, optio consequuntur
+                  iusto fugiat, dolores minus laboriosam reprehenderit cumque
+                  eius distinctio aperiam minima? Inventore, excepturi non.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur veniam suscipit aut error dicta, optio consequuntur
+                  iusto fugiat, dolores minus laboriosam reprehenderit cumque
+                  eius distinctio aperiam minima? Inventore, excepturi non.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur veniam suscipit aut error dicta, optio consequuntur
+                  iusto fugiat, dolores minus laboriosam reprehenderit cumque
+                  eius distinctio aperiam minima? Inventore, excepturi non.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur veniam suscipit aut error dicta, optio consequuntur
+                  iusto fugiat, dolores minus laboriosam reprehenderit cumque
+                  eius distinctio aperiam minima? Inventore, excepturi non.
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur veniam suscipit aut error dicta, optio consequuntur
+                  iusto fugiat, dolores minus laboriosam reprehenderit cumque
+                  eius distinctio aperiam minima? Inventore, excepturi non.
+                </p>
               </div>
             </div>
           </div>
@@ -141,6 +233,45 @@ const Home = () => {
           <div class="col-sm-3">
             <div className="hossceNa">
               <img className="img-fluid w-80" src={what_we3} alt="" />
+              <div class="py-3">
+                <span className="font-weight-bold">
+                  Victorian Bangladeshi Cultural Society
+                </span>
+              </div>
+              <div class="more-btn">
+                <div className="moreBtn">More</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div className="hossceNa">
+              <img className="img-fluid w-80" src={what_we1} alt="" />
+              <div class="py-3">
+                <span className="font-weight-bold">
+                  Victorian Bangladeshi Cultural Society
+                </span>
+              </div>
+              <div class="more-btn">
+                <div className="moreBtn">More</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div className="hossceNa">
+              <img className="img-fluid w-80" src={what_we1} alt="" />
+              <div class="py-3">
+                <span className="font-weight-bold">
+                  Victorian Bangladeshi Cultural Society
+                </span>
+              </div>
+              <div class="more-btn">
+                <div className="moreBtn">More</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <div className="hossceNa">
+              <img className="img-fluid w-80" src={what_we1} alt="" />
               <div class="py-3">
                 <span className="font-weight-bold">
                   Victorian Bangladeshi Cultural Society

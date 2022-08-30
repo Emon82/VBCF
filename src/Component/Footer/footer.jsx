@@ -164,9 +164,33 @@ export default function footer() {
                 </div>
               </div>
             </div>
+            <div className="col-md-2"></div>
+            <div className="col-md-6">
+              <div className="footer-about">
+                <h3 className="text-white">About</h3>
+                <p className="text-white">
+                  Western Region Bengali School (WRBS) is an ethnic language
+                  school targeting the second generation Australian Bangladeshis
+                  living in the north and western suburbs of Melbourne. However,
+                  it is open to all Australian Bangladeshi living in Victoria.
+                  WRBS formed in 2006, in Hoppers Crossing, Victoria with goals
+                  of promoting Bangla literacy and numeracy and passing on the
+                  rich Bangladeshi cultural heritage to our next generation
+                  Australian-Bangladeshi. The school has come a long way since
+                  its inception as an entity that currently has 152 enrolled
+                  students.
+                </p>
+
+                <h3 className="text-white mb-3">Social</h3>
+                <i className="text-white fa fa-facebook"></i>
+                <i className="text-white fa fa-youtube"></i>
+                <i className="text-white fa fa-twitter"></i>
+                <i className="text-white fa fa-instagram"></i>
+                <i className="text-white fa fa-linkedin"></i>
+              </div>
+            </div>
           </div>
         </div>
-        /
       </div>
       <div className="copiright">
         <h6 className="footer">
@@ -174,6 +198,11 @@ export default function footer() {
           Plaza, Vic 3029, Australia
         </h6>
         <span>©2017 by Victorian Bangladeshi Community Foundation - VBCF.</span>
+        <span>
+          {" "}
+          Powered by{" "}
+          <a href="http://www.techknowgram.com">TechKnowGram Limited</a>
+        </span>
       </div>
     </>
   );

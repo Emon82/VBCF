@@ -64,6 +64,7 @@ h1 {
 .gallery-image {
   border: 5px solid rgb(56, 55, 55);
   padding: 10px;
+  cursor: pointer;
 }
 
 .About-text {
@@ -403,4 +404,9 @@ h1 {
 
 .social-media-container .card {
   margin: 25px 0;
+}
+
+.social-media-container .card a {
+  text-decoration: none;
+  color: #000;
 }
