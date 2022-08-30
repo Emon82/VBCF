@@ -10,7 +10,7 @@ const PostDetails = () => {
   const [singlePost, setSinglePost] = useState({});
 
   useEffect(() => {
-    fetch("http://vbcf-backend.techknowgram.com/api/posts/" + id)
+    fetch("https://vbcf-backend.techknowgram.com/api/posts/" + id)
       .then((response) => response.json())
       .then((data) => setSinglePost(data));
   }, []);
