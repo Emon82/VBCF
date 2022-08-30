@@ -10,7 +10,7 @@ const PostDetails = () => {
   const [singlePost, setSinglePost] = useState({});
 
   useEffect(() => {
-    fetch("http://192.168.0.147:8000/api/posts/" + id)
+    fetch("http://vbcf-backend.techknowgram.com/api/posts/" + id)
       .then((response) => response.json())
       .then((data) => setSinglePost(data));
   }, []);

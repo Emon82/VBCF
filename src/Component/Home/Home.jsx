@@ -36,7 +36,7 @@ const Home = () => {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/videos")
+    fetch("http://vbcf-backend.techknowgram.com/api/videos")
       .then((response) => response.json())
       .then((data) => setVideos(data));
   }, []);
