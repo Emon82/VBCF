@@ -7,7 +7,7 @@ export default function Program() {
 
   useEffect(() => {
     // fetch("http://192.168.0.147:8000/api/posts")
-    fetch("https://vbcf-backend.techknowgram.com/api/posts")
+    fetch("https://vbcf-backend.techknowgram.net/api/posts")
       .then((response) => response.json())
       .then((data) => setPosts(data));
   }, []);

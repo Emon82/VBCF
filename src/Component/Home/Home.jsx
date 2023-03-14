@@ -36,7 +36,7 @@ const Home = () => {
   const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    fetch("https://vbcf-backend.techknowgram.com/api/videos")
+    fetch("https://vbcf-backend.techknowgram.net/api/videos")
       .then((response) => response.json())
       .then((data) => setVideos(data));
   }, []);
